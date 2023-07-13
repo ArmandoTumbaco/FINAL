@@ -1,0 +1,59 @@
+* {
+
+    box-sizing: border-box;
+    text-decoration: none;
+    
+   
+  }
+body {
+    background-color: rgba(255, 255, 255, 0.736); /* Reemplaza los valores RGB y el valor de opacidad según tus necesidades */
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+    background-image: url("src\assets\img\dwayne-johnson-in-gym-4k-kf-1400x1050.jpg");
+  }
+/* Estilos para el contenedor */
+
+.container {
+    max-width: 400px;
+    margin: 100px auto 0; /* Agrega un margen superior de 50px */
+    padding: 20px;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+    background-color: rgba(255, 255, 255, 0.736); /* Reemplaza los valores RGB y el valor de opacidad según tus necesidades */
+  }
+  
+  /* Estilos para el formulario */
+  .container form {
+    display: grid;
+    grid-gap: 10px;
+  }
+  
+  /* Estilos para los campos de entrada y etiquetas */
+  .container label {
+    font-weight: bold;
+    font-size: 16px;
+  }
+  
+  .container input,
+  .container select {
+    width: 100%;
+    padding: 5px;
+    border: 1px solid #ccc;
+    border-radius: 3px;
+  }
+  
+  /* Estilos para el botón de envío */
+  .container input[type="submit"] {
+    background-color: #e03030;
+    color: #fff;
+    padding: 10px;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+  }
+  
+  .container input[type="submit"]:hover {
+    background-color: #45a049;
+  }
+ 

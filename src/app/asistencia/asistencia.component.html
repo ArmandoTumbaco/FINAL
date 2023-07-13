@@ -1,0 +1,22 @@
+<body>
+  <section class="registroDias" id="registroDias"></section>
+
+  <div class="container">
+    <div class="turegistro">
+      <h1>Registro de visita al gimnasio</h1>
+      <form [formGroup]="registroForm" (ngSubmit)="submitForm()">
+        <label for="name">Nombre:</label>
+        <input type="text" id="name" formControlName="nombre">
+
+        <label for="date">Fecha:</label>
+        <input type="date" id="date" formControlName="fecha">
+        
+        <label for="time">Hora:</label>
+        <input type="time" id="time" formControlName="hora">
+       
+        <input type="submit" value="Enviar" [disabled]="!registroForm.valid">
+        <span *ngIf="!registroForm.valid && registroForm.touched">Por favor, completa todos los campos.</span>
+      </form>
+    </div>
+  </div>
+</body>

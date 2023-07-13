@@ -1,0 +1,20 @@
+<body>
+    <div class="contenedor__todo">
+                <h3>¿Ya tienes una cuenta?</h3>
+                <p>Inicia sesión para entrar en la página y conocer todo sobre el Gimnasio</p>
+        
+                <button type="submit" (click)="redirigirAlSesion()">Iniciar Sesion</button>
+            </div>
+<div class="contenedor__register">
+<h2>Registro de usuario</h2>
+<form [formGroup]="formReg" (ngSubmit)="onSubmit()">
+    <div class="mb-3">
+        <label class="form-label">Email</label>
+        <input type="text" class="form-control" formControlName="email">
+    </div>
+    <div class="mb-3">
+        <label class="form-label">Password</label>
+        <input type="password" class="form-control" formControlName="password">
+    </div>
+    <input type="submit" value="Enviar"class="enviar-button"> 
+</form>

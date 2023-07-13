@@ -1,0 +1,14 @@
+.button-container {
+    margin-top: 1rem;
+  }
+  
+  .custom-button {
+    display: inline-block;
+    padding: 1rem 2.8rem;
+    padding-right: 3rem;
+    background: linear-gradient(130deg, rgb(198, 31, 31) 93%, transparent 90%);
+    color: #fff;
+    cursor: pointer;
+    font-size: 1.7rem;
+  }
+  

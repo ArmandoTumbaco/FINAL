@@ -1,0 +1,28 @@
+<body>
+    <div class="caja__trasera-register">
+        <h3>¿Aún no tienes una cuenta?</h3>
+        <p>Regístrate para que puedas iniciar sesión en MUSCLEFIT</p>
+        <button type="submit"(click)="redirectToMain()">Registrarse</button>
+    </div>
+ <!--Formulario de Login y registro-->
+ <div class="contenedor__login-register">
+    <h2>Login de usuario</h2>
+    <form [formGroup]="formLogin" (ngSubmit)="onSubmit()">
+        <div class="mb-3">
+            <label class="form-label">Email</label>
+            <input type="text" class="form-control" formControlName="email">
+        </div>
+        <div class="mb-3">
+            <label class="form-label">Password</label>
+            <input type="password" class="form-control" formControlName="password">
+        </div>
+        <input type="submit" value="Entrar" class="entrar-button">
+        <button class="btn btn-info" (click)="onClick()">Continuar con Google</button>
+    </form>
+    <div *ngIf="showErrorMessage" class="error-message">
+        Introduzca datos correctos.
+      </div>
+</div>
+
+
+

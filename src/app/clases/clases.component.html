@@ -1,0 +1,80 @@
+<body>
+    <section id="clases">
+        <div class="contenedor">
+        
+          <div class="form-agregar">
+            <h3>{{ indiceEditar !== -1 ? 'Editar Clase' : 'Agregar Clase' }}</h3>
+            <form [formGroup]="claForm" (ngSubmit)="agregarClase()">
+              <div>
+                <label>Hora:</label>
+                <input type="text" formControlName="hora" required>
+              </div>
+              <div>
+                <label>Lunes:</label>
+                <input type="text" formControlName="lunes" required>
+              </div>
+              <div>
+                <label>Martes:</label>
+                <input type="text" formControlName="martes" required>
+              </div>
+              <div>
+                <label>Miércoles:</label>
+                <input type="text" formControlName="miercoles" required>
+              </div>
+              <div>
+                <label>Jueves:</label>
+                <input type="text" formControlName="jueves" required>
+              </div>
+              <div>
+                <label>Viernes:</label>
+                <input type="text" formControlName="viernes" required>
+              </div>
+              <div>
+                <ng-container *ngIf="indiceEditar !== -1; else agregarBoton">
+                  <button type="button" (click)="guardarClase()">Guardar</button>
+                  <button type="button" (click)="cancelarEdicion()">Cancelar</button>
+                </ng-container>
+                <ng-template #agregarBoton>
+                  <button type="submit" [disabled]="indiceEditar !== -1">{{ indiceEditar !== -1 ? 'Guardar' : 'Agregar' }}</button>
+                </ng-template>
+              </div>
+            </form>
+          </div>
+        
+          <table>
+            <thead>
+              <tr>
+                <th>Hora</th>
+                <th>Lunes</th>
+                <th>Martes</th>
+                <th>Miércoles</th>
+                <th>Jueves</th>
+                <th>Viernes</th>
+                <th>Acciones</th>
+              </tr>
+            </thead>
+            
+            <tbody>
+                <tr *ngFor="let clase of clases; let i = index">
+                    <td>{{ clase.hora }}</td>
+                    <td>{{ clase.lunes }}</td>
+                    <td>{{ clase.martes }}</td>
+                    <td>{{ clase.miercoles }}</td>
+                    <td>{{ clase.jueves }}</td>
+                    <td>{{ clase.viernes }}</td>
+                    <td>
+                  <ng-container *ngIf="i === indiceEditar; else acciones">
+                   
+                    <button (click)="cancelarEdicion()">Cancelar</button>
+                  </ng-container>
+                  <ng-template #acciones>
+                    <button (click)="editarClase(i)">Editar</button>
+                    <button (click)="eliminarClase(i)">Eliminar</button>
+                  </ng-template>
+                </td>
+              </tr>
+            </tbody>
+          </table>
+        </div>
+      </section>
+      

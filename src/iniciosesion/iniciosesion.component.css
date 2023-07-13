@@ -1,0 +1,134 @@
+
+
+
+body {
+    background-image: url(https://fondosmil.com/fondo/4083.jpg);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+    margin: 0;
+    background-color: #3a4bae;
+ 
+}
+h3{
+  text-align: center;
+  font-size: 24px;
+    margin-bottom: 20px;
+}
+p{
+  font-size: 28px;
+}
+h2{
+  text-align: center;
+  font-size: 24px;
+    margin-bottom: 20px;
+}
+
+
+
+.contenedor__login-register {
+    
+    background-color: rgba(255, 255, 255, 0.621); /* Reemplaza los valores RGB y el valor de opacidad según tus necesidades */
+    padding: 50px;
+  border-radius: 2px;
+  box-shadow: 0 0 10px rgba(0, 0, 0, 0.2);
+  width: 50%;
+  max-width: 300px;
+}
+label {
+  margin-bottom: 10px;
+}
+  .caja__trasera-register{
+    background-color: transparent;
+    background-color: rgba(255, 255, 255, 0.621);
+    background-size: cover; /* Adjust the background image size */
+    background-position: center; /* Adjust the background image position */
+    padding: 50px;
+    border-radius: 5px;
+    box-shadow: 0 2px 5px rgba(20, 193, 20, 0.1);
+    display: flex;
+    flex-direction: column; /* Agregamos esta línea */
+    align-items:center;
+    margin: 10px 0;
+    width: 30%;
+    height: 30vh;
+    text-align: center;
+  font-size: 24px;
+
+  }
+  .caja__trasera-register p {
+    color: #fff;
+    
+    margin: 10px 0; /* Añadimos un margen entre los elementos */
+    text-align: center;
+    font-size: 18px;
+      margin-bottom: 20px;
+    
+  }
+  .contenedor__login-register {
+    color: #fff;
+    
+    margin: 10px 0; /* Añadimos un margen entre los elementos */
+    text-align: center;
+    font-size: 18px;
+      margin-bottom: 20px;
+  }
+  button {
+    padding: 10px 20px;
+    font-size: 16px;
+    border: none;
+    border-radius: 5px;
+    background-color: #2056ac;
+    color: #fff;
+    cursor: pointer;
+    transition: background-color 0.3s ease;
+  }
+
+  .entrar-button {
+    padding: 10px 20px;
+    font-size: 16px;
+    border: none;
+    border-radius: 5px;
+    background-color: #2056ac;
+    color: #fff;
+    cursor: pointer;
+    transition: background-color 0.3;
+   
+    width: 50%;
+    
+  
+  }
+  
+  .btn-info {
+    margin-top: 10px;
+    width: 50%;/* Agrega un margen superior para separar el botón de registro y el botón de Google */
+  }
+  button:hover {
+    background-color: #1b4c8f;
+  }
+  
+  button:focus {
+    outline: none;
+    box-shadow: 0 0 0 3px rgba(32, 86, 172, 0.4);
+  }
+  
+  button:active {
+    background-color: rgb(220, 38, 38)
+   
+   
+  }
+  .caja__trasera-register h3 {
+   color: #ffffff;
+  }
+  .error-message {
+    margin-top: 1rem;
+  color: rgb(220, 38, 38);
+  font-size: 1.5rem; /* Tamaño de fuente más grande */
+  font-weight: bold; /* Texto en negrita */
+}
+ 
+.contenedor__login-register label {
+  font-weight: bold;
+  font-size: 13px;
+}

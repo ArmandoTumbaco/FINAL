@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+</head>
+<body>
+    <div class="container">
+      <h1>Reserva tu de Cita en Línea</h1>
+  
+      <form [formGroup]="registroForm" (ngSubmit)="submitForm()">
+        <label for="nombre">Nombres:</label>
+        <input type="text" id="nombre" formControlName="nombre"  >
+
+        <label for="telefono">Telefono:</label>
+        <input type="text" id="telefono" formControlName="telefono">
+
+        <label for="correo">Correo Electronico:</label>
+        <input type="text" id="correo" formControlName="correo">
+        
+        <label for="genero">Género:</label>
+        <select id="genero" name="genero" formControlName="genero">
+            <option value="">- Seleccionar -</option>
+            <option value="Hombre">Hombre</option>
+            <option value="Mujer">Mujer</option>
+        </select>
+        
+        <label for="Tipo_Clase">Tipo de Clase:</label>
+        <select id="Tipo_Clase" name="Tipo_Clase" formControlName="Tipo_Clase">
+            <option value="">- Seleccionar -</option>
+            <option value="BOXEO">BOXEO</option>
+            <option value="YOGA">YOGA</option>
+            <option value="CROSSFIT">CROSSFIT</option>
+            <option value="BAILOTERAPIA">BAILOTERAPIA</option>
+            <option value="SPINNIG">YOGA</option>
+        </select>
+        
+       <input type="submit" value="Enviar"[disabled]="!registroForm.valid">
+       <span *ngIf="!registroForm.valid && registroForm.touched">Por favor, completa todos los campos.</span>
+    </form>
+ 

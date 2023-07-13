@@ -1,0 +1,107 @@
+body {
+    background-image: url(https://fondosmil.com/fondo/4083.jpg);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+    margin: 0;
+    background-color: #3a4bae;
+ 
+}
+h2{
+  text-align: center;
+    margin-bottom: 20px;
+    font-size: 24px;
+    color: aliceblue;
+}
+form {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+.contenedor__todo {
+  background-color: transparent;
+  background-color: rgba(255, 255, 255, 0.621); /* Specify the path to your background image */
+  background-size: cover; /* Adjust the background image size */
+  background-position: center;
+    padding: 50px;
+    border-radius: 5px;
+    box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
+    display: flex;
+    flex-direction: column; /* Agregamos esta línea */
+    align-items: center; /* Opcional: centra los elementos horizontalmente */
+    width: 30%;
+    height: 30vh
+  }
+  .contenedor__todo input,
+  .contenedor__todo h2,
+  .contenedor__todo p {
+    font-size: 2rem;
+    margin: 10px 0; /* Añadimos un margen entre los elementos */
+  }
+  .contenedor__register{
+    background-color: transparent;
+    background-color: rgba(255, 255, 255, 0.621);
+    background-size: cover; /* Adjust the background image size */
+    background-position: center;
+    padding: 50px;
+    border-radius: 5px;
+    box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
+    display: flex;
+    flex-direction: column; /* Agregamos esta línea */
+    align-items:center;
+    width: 10%;
+    height: 30vh
+  }
+  h3{
+    color: aliceblue;
+  }
+p{
+  color: aliceblue;
+}
+button {
+  padding: 10px 20px;
+  font-size: 16px;
+  border: none;
+  border-radius: 5px;
+  background-color: #1f498e;
+  color: #fff;
+  cursor: pointer;
+  transition: background-color 0.3s ease;
+}
+
+.enviar-button {
+  padding: 10px 20px;
+  font-size: 16px;
+  border: none;
+  border-radius: 5px;
+  background-color: #2056ac;
+  color: #fff;
+  cursor: pointer;
+  transition: background-color 0.3;
+ 
+  width: 50%;
+  
+
+}
+button:hover {
+  background-color: #1b4c8f;
+}
+
+button:focus {
+  outline: none;
+  box-shadow: 0 0 0 3px rgba(32, 86, 172, 0.4);
+}
+
+button:active {
+  background-color: #cc1e1e;
+}
+
+.contenedor__register {
+  color: #fff;
+  
+  margin: 10px 0; /* Añadimos un margen entre los elementos */
+  text-align: center;
+  font-size: 16px;
+    margin-bottom: 20px;
+}

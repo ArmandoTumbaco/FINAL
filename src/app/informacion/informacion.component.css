@@ -1,0 +1,36 @@
+body {
+    
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+  }
+  .whatsapp-button {
+    display: inline-block;
+    padding: 5px 20px;
+    background-color: rgba(0, 255, 0, 0.467);
+    color: white;
+    text-decoration: none;
+    border-radius: 5px;
+    position: relative;
+    
+    
+  }
+  
+  .whatsapp-button:hover .whatsapp-indicator {
+    right: -5px;
+    
+  }
+  
+  .whatsapp-indicator {
+    position: absolute;
+    top: 50%;
+    right: 0;
+    transform: translateY(-50%);
+    width: 10px;
+    height: 10px;
+    background-color: white;
+    border-radius: 50%;
+    transition: right 0.3s ease-in-out;
+    
+  }
+  

@@ -1,0 +1,92 @@
+body {
+  background-color: rgb(200, 200, 200);
+  background-size: cover;
+  background-position: center;
+  background-repeat: no-repeat;
+  background-image: url("src\assets\img\CUERDA.jpg");
+}
+
+.contenedor {
+  max-width: 800px;
+  margin: 0 auto;
+  
+}
+
+h2 {
+  text-align: center;
+}
+
+.form-agregar {
+  max-width: 300px;
+  margin-bottom: 20px;
+  padding: 10px;
+  background-color: rgba(255, 255, 255, 0.736); 
+  margin-left: auto;
+}
+form div {
+  margin-bottom: 10px;
+}
+form label {
+  display: inline-block;
+  width: 100px;
+}
+form input[type="text"] {
+  width: 200px;
+}
+table {
+  width: 100%;
+  border-collapse: collapse;
+}
+thead {
+  background-color: #f5f5f5;
+}
+th, td {
+  padding: 10px;
+  text-align: center;
+}
+tbody tr:nth-child(even) {
+  background-color: #f9f9f9;
+}
+tbody td {
+  vertical-align: middle;
+}
+button {
+  padding: 5px 10px;
+  background-color:rgba(255, 0, 0, 0.736) ;
+  color: white;
+  border: none;
+  cursor: pointer;
+  font-size: 14px;
+}
+button:disabled {
+  background-color: #ccc;
+  cursor: not-allowed;
+}
+button + button {
+  margin-left: 5px;
+}
+.table-container {
+  width: 800%;
+  overflow-x: auto;
+}
+table {
+  width: 100%;
+}
+
+table td,
+table th {
+  padding: 0.5rem;
+}
+
+tbody tr {
+  background-color: rgba(255, 255, 255, 0.8); 
+}
+
+tbody tr:nth-child(even) {
+  background-color: rgba(255, 255, 255, 0.6); 
+}
+
+.form-agregar label {
+  font-weight: bold;
+  font-size: 10px;
+}

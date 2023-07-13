@@ -1,0 +1,55 @@
+
+    
+   
+      .custom-button {
+        background-color: #e03030;
+        color: #fff;
+        padding: 10px;
+        border: none;
+        border-radius: 5px;
+        cursor: pointer;
+        box-sizing: border-box;
+    text-decoration: none;
+      }
+      
+      .custom-button {
+        /* Existing styles */
+        display: inline-block;
+        padding: 1rem 2.8rem;
+        padding-right: 3rem;
+        
+        color: #fff;
+        cursor: pointer;
+        font-size: 1.7rem;
+        box-sizing: border-box;
+        text-decoration: none;
+        transition: background-color 0.3s ease-in-out;
+        position: relative;
+      }
+      
+      .custom-button:hover {
+        background-color: #3627de; /* Change to your desired hover color */
+      }
+      
+      .custom-button::before {
+        content: attr(data-tooltip);
+        position: absolute;
+        top: -2.5rem; /* Adjust the distance above the button */
+        left: 50%;
+        transform: translateX(-50%);
+        background-color: rgba(0, 0, 0, 0.8);
+        color: #fff;
+        padding: 0.5rem;
+        border-radius: 5px;
+        font-size: 1.3rem; /* Increase the font size */
+        white-space: nowrap;
+        opacity: 0;
+        visibility: hidden;
+        transition: opacity 0.3s ease-in-out, visibility 0.3s ease-in-out;
+      }
+      
+      .custom-button:hover::before {
+        opacity: 1;
+        visibility: visible;
+      }
+      
