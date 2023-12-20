@@ -658,4 +658,17 @@ html {
   }/*# sourceMappingURL=estilo.css.map */
   html, body { height: 100%; }
   body { margin: 0; font-family: Roboto, "Helvetica Neue", sans-serif; }
-  
+  /* Estilos para pantallas pequeñas */
+@media (max-width: 767px) {
+  /* Agrega aquí los estilos que deseas aplicar a pantallas pequeñas */
+}
+
+/* Estilos para pantallas medianas */
+@media (min-width: 768px) and (max-width: 1023px) {
+  /* Agrega aquí los estilos que deseas aplicar a pantallas medianas */
+}
+
+/* Estilos para pantallas grandes */
+@media (min-width: 1024px) {
+  /* Agrega aquí los estilos que deseas aplicar a pantallas grandes */
+}

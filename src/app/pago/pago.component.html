@@ -1,23 +1,39 @@
 <body>
   
 <div class="pago-container">
-  <h2>Formulario de Pago</h2>
-  <form [formGroup]="paymentForm" (ngSubmit)="onSubmit()">
+  <h1>Formulario de Pago</h1>
+
+<form [formGroup]="paymentForm" (ngSubmit)="onSubmit()">
+  <div>
     <label for="cardNumber">Número de Tarjeta:</label>
-    <input type="text" id="cardNumber" formControlName="cardNumber" maxlength="16" required>
+    <input type="text" id="cardNumber" formControlName="cardNumber">
+    <span *ngIf="paymentForm.get('cardNumber')?.invalid && (paymentForm.get('cardNumber')?.dirty || paymentForm.get('cardNumber')?.touched)"
+          class="error">* {{ cardNumberError }}</span>
+  </div>
 
-    <label for="cardName">Nombre en la Tarjeta:</label>
-    <input type="text" id="cardName" formControlName="cardName" required>
+  <div>
+    <label for="cardName">Nombre de la Tarjeta:</label>
+    <input type="text" id="cardName" formControlName="cardName">
+    <span *ngIf="paymentForm.get('cardName')?.invalid && (paymentForm.get('cardName')?.dirty || paymentForm.get('cardName')?.touched)"
+          class="error">* {{ cardNameError }}</span>
+  </div>
 
+  <div>
     <label for="expiryDate">Fecha de Vencimiento:</label>
-    <input type="text" id="expiryDate" formControlName="expiryDate" required>
+    <input type="text" id="expiryDate" formControlName="expiryDate">
+    <span *ngIf="paymentForm.get('expiryDate')?.invalid && (paymentForm.get('expiryDate')?.dirty || paymentForm.get('expiryDate')?.touched)"
+          class="error">* {{ expirationDateError }}</span>
+  </div>
 
+  <div>
     <label for="cvv">CVV:</label>
-    <input type="text" id="cvv" formControlName="cvv"  required>
+    <input type="text" id="cvv" formControlName="cvv">
+    <span *ngIf="paymentForm.get('cvv')?.invalid && (paymentForm.get('cvv')?.dirty || paymentForm.get('cvv')?.touched)"
+          class="error">* {{ cvvError }}</span>
+  </div>
 
-    <input type="submit" value="Enviar" [disabled]="!paymentForm.valid">
-    <span *ngIf="!paymentForm.valid && paymentForm.touched">Por favor, completa todos los campos.</span>
-  </form>
+  <button type="submit" [disabled]="paymentForm.invalid">Pagar</button>
+</form>
 </div>
 </body>
 

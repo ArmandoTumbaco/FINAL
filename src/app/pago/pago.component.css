@@ -3,6 +3,7 @@ body {
   background-size: cover;
   background-position: center;
   background-repeat: no-repeat;
+  background-image: url("src\assets\img\dwayne-johnson-in-gym-4k-kf-1400x1050.jpg");
 }
 .pago-container {
   max-width: 400px;

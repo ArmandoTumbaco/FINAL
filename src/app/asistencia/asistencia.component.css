@@ -1,8 +1,9 @@
 body {
-  background-color: black; 
+   
   background-size: cover;
   background-position: center;
   background-repeat: no-repeat;
+  background-image: url("src\assets\img\CUERDA.jpg");
 }
 
 .container {
